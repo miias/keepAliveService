@@ -4,7 +4,7 @@ const axios = require('axios');
 const app = express();
 const PORT = 3000;
 const WEBSITE_URL = 'https://dynamic-helpful-drill.glitch.me';
-const PING_INTERVAL_MS = 60000; // 1 minute interval (adjust as needed)
+const PING_INTERVAL_MS = 240000; // 1 minute interval (adjust as needed)
 
 function pingWebsite() {
     axios.get(WEBSITE_URL)
