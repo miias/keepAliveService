@@ -22,6 +22,12 @@ pingWebsite();
 // Schedule automatic pings at the specified interval
 setInterval(pingWebsite, PING_INTERVAL_MS);
 
+app.get('/', (req, res) => res.send('Keep Alive Service'));
+
+app.all(`/`, (req, res) => {
+  res.send(`Result: [OK].`);
+});
+
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
