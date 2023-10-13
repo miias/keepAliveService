@@ -1,11 +1,10 @@
 {
   "name": "keepalivewebservice",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Simple static website with Node.js and Express",
+  "main": "build/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node build/app.js"
+   
   },
   "keywords": [],
   "author": "",
