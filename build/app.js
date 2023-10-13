@@ -1,8 +1,8 @@
-const express = require('express');
+// const express = require('express');
 const axios = require('axios');
 
-const app = express();
-const PORT = 3000;
+// const app = express();
+// const PORT = 3000;
 const WEBSITE_URL = 'https://dynamic-helpful-drill.glitch.me';
 const PING_INTERVAL_MS = 120000;
 
@@ -24,12 +24,12 @@ pingWebsite();
 // Schedule automatic pings at the specified interval
 setInterval(pingWebsite, PING_INTERVAL_MS);
 
-app.get('/', (req, res) => res.send('Keep Alive Service'));
+// app.get('/', (req, res) => res.send('Keep Alive Service'));
 
-app.all(`/`, (req, res) => {
-  res.send(`Result: [OK].`);
-});
+// app.all(`/`, (req, res) => {
+//   res.send(`Result: [OK].`);
+// });
 
-app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
-});
+// app.listen(PORT, () => {
+//     console.log(`Server is running on port ${PORT}`);
+// });
