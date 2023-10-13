@@ -4,7 +4,8 @@
   "description": "Simple static website with Node.js and Express",
   "main": "build/app.js",
   "scripts": {
-    "start":"node build/app.js"
+    "start":"node build/app.js",
+    "build":"echo 'Build step not required for this application'"
   },
   "keywords": [],
   "author": "",
